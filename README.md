@@ -1,1 +1,3 @@
 # daily_planner
+
+This daily planner makes your day simpler by color coding your daily tasks. As a user, you can input text in the given fields and save them to local storage by clicking the save button to the right of the text input. The text input area is color coded depending on the hour of the clock at the top of the page. Tasks that have passed are gray, tasks that occur at the hour are red, and upcoming tasks are green. 
