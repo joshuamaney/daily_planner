@@ -1,3 +1,5 @@
+
+
 // clock and timer
 function update() {
     $('#currentDay').html(moment().format('D. MMMM YYYY h:mm:ss'));
@@ -9,9 +11,8 @@ function update() {
   $("#savebtn9").on("click", function() {
     
     var input = $(this).siblings(".form-control").val();
-    var hour = $(this).siblings().attr("id");
 
-    localStorage.setItem(hour, input);
+    window.localStorage.setItem(input, JSON.stringify(input));
   });
 
   $("#savebtn10").on("click", function() {
@@ -19,7 +20,7 @@ function update() {
     var input = $(this).siblings(".form-control").val();
     var hour = $(this).siblings().attr("id");
 
-    localStorage.setItem(hour, input);
+    localStorage.setItem(input, JSON.stringify(input));
   });
 
   $("#savebtn11").on("click", function() {
@@ -27,7 +28,7 @@ function update() {
     var input = $(this).siblings(".form-control").val();
     var hour = $(this).siblings().attr("id");
 
-    localStorage.setItem(hour, input);
+    localStorage.setItem(input, JSON.stringify(input));
   });
 
   $("#savebtn12").on("click", function() {
@@ -35,7 +36,7 @@ function update() {
     var input = $(this).siblings(".form-control").val();
     var hour = $(this).siblings().attr("id");
 
-    localStorage.setItem(hour, input);
+    localStorage.setItem(input, JSON.stringify(input));
   });
 
   $("#savebtn1").on("click", function() {
@@ -43,7 +44,7 @@ function update() {
     var input = $(this).siblings(".form-control").val();
     var hour = $(this).siblings().attr("id");
 
-    localStorage.setItem(hour, input);
+    localStorage.setItem(input, JSON.stringify(input));
   });
 
   $("#savebtn2").on("click", function() {
@@ -51,7 +52,7 @@ function update() {
     var input = $(this).siblings(".form-control").val();
     var hour = $(this).siblings().attr("id");
 
-    localStorage.setItem(hour, input);
+    localStorage.setItem(input, JSON.stringify(input));
   });
 
   $("#savebtn3").on("click", function() {
@@ -59,7 +60,7 @@ function update() {
     var input = $(this).siblings(".form-control").val();
     var hour = $(this).siblings().attr("id");
 
-    localStorage.setItem(hour, input);
+    localStorage.setItem(input, JSON.stringify(input));
   });
 
   $("#savebtn4").on("click", function() {
@@ -67,7 +68,15 @@ function update() {
     var input = $(this).siblings(".form-control").val();
     var hour = $(this).siblings().attr("id");
 
-    localStorage.setItem(hour, input);
+    localStorage.setItem(input, JSON.stringify(input));
+  });
+
+  $("#savebtn5").on("click", function() {
+    
+    var input = $(this).siblings(".form-control").val();
+    var hour = $(this).siblings().attr("id");
+
+    localStorage.setItem(input, JSON.stringify(input));
   });
 
   // changing the color of the text input field depending on the time
